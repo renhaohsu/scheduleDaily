@@ -1,0 +1,100 @@
+*{  
+  font-family: 'Helvetica', 'Verdana', 微軟正黑體;
+}
+.header {
+  width: 100%;
+  height: 36px;
+  color: rgba(255, 255, 255, 0.705);
+  background: rgba(99, 113, 192, 0.082);
+  /*position: fixed;*/
+  font-size: 30px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 9px 1px rgba(0, 0, 0, 0.12), 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  padding: 16px 0;
+  display: flex;
+/*   text-align: center; */
+  align-items: center;
+}
+
+h1 {
+/*   width: 500px; */
+/*   height: 10px; */
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: teal;
+}
+  
+
+button {
+  width: 34px;
+  height: 34px;
+  margin-right: 16px;
+  position: relative;
+  /*left: 5%;*/
+  background-color: rgba(0, 0, 255, 0.068);
+  border: 0;
+  border-radius: 15px;
+  color: darkorchid;
+  font-family: 'Helvetica', 'Verdana', 微軟正黑體;
+  
+}
+
+#sidebar {
+  position: absolute;
+  /* color:  */
+  background-color: slateblue;
+  width: 0px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  transition: all 0.5s;
+  top: 0;
+  filter: opacity(0.9);
+}
+
+#sidebarRight{
+  /*border: 1px solid #000;*/
+  color:red;
+  position: fixed;
+  top: 0;
+  right: 0%;
+  width: 70%;
+  height: 100%;
+  pointer-events: none;
+  display:none;
+}
+
+/*
+.sidebarAppear {
+  width: 304px;
+  background-color: red
+}*/
+
+.img {
+  width: 100%;
+  height: 171px;
+  position: relative;
+  background-color: midnightblue;
+}
+
+#sidebar .topic {
+  text-align: center;
+  line-height: 48px;
+  box-sizing: border-box;
+  height: 48px;
+  width: calc(100% + -30px);
+  /*width: 100%;*/
+  /* 去調box-sizing並指定寬度100%的話 收起sidebar時應該試看不到字被壓扁 但有趣所以先留著*/
+  display: block;
+  border: 1px dashed grey;
+  border-radius: 5px;
+  cursor: pointer;  
+  margin: 15px;
+  color: paleturquoise;
+  background-color: rgba(25, 25, 112, 0.301);
+}
+
+@media screen and (max-width: 800px) {
+  
+}

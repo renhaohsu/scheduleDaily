@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>schedule_d_m_y</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="./css/sideBar.css">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+</head>
+<body>
+
+<div class="header" id="header"> 
+  <button id="my_btn">＞</button>
+	<h1 class="leftSpace nowTime"> 2019/07/14 </h1>
+	
+</div>
+
+<div id="sidebar">
+  <div class="img"></div>
+  <div class="topic">日</div>
+  <div class="topic">月</div>
+  <div class="topic">隨時</div>
+</div>
+<div id="sidebarRight"></div>
+
+	
+	<!-- <p class="leftSpace nowTime"> 2019/07/14 </p> -->
+	<br>
+<div class="todos">
+	<div class="container">	
+		<p class="title"> 步驟：</p>
+		<input type="text" name="text" class="lesson" placeholder=" 沒預定? 練一下吉他♬ ">
+
+		<div class="lesson lessonText" hidden>
+			123 
+		</div>
+	</div>
+
+</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="btn_container">
+		<div class="add">十</div>
+	</div>
+
+<script src="./js/sideBar.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
